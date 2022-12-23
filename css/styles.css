@@ -35,6 +35,13 @@ h1, h2, h3, p, span { margin: 0; }
     margin: 0 auto;
     border: 1px solid red;
 }
+.error { border-color: red; }
+.div-error { 
+    color: red; 
+    margin: 1rem 0 1.5rem 0;
+    font-style: italic;
+}
+.mb-2rem { margin-bottom: 2rem ;}
 
 /* HEADER */
 header { 
