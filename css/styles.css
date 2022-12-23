@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --l-red: hsl(354, 100%, 66%);
+    
+    --gray: hsl(0, 0%, 59%);
+    --v-d-blue: hsl(209, 33%, 12%);
+
+    --principal-font: 'Libre Franklin', sans-serif;
+} 
+
+/* GLOBALS */
+html  {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after { box-sizing: inherit; }
+body {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-family: var(--principal-font);
+}
+img { max-width: 100%; }
+h1, h2, h3, p, span { margin: 0; }
+
+/* UTILITIES */
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+/* HEADER */
+header { 
+    margin: 8rem 0 3rem 0; 
+    width: 6rem;
+}
+
+/* SUSCRIBE */
+.suscribe, input, button {
+    width: 100%;
+}
+h1 { font-size: 2.4rem; }
+span {
+    color: var(--gray);
+    font-weight: 300;
+}
+.suscribe-text {
+    text-align: center;
+    margin: 1rem 0 1rem 0;
+}
+input, button {
+    border-radius: 2.3rem;
+    padding: 1.2rem 3rem;
+    margin-top: 1.3rem;
+}
+input {
+    border: 1px solid var(--blue);
+}
+input:focus {
+    outline-color: hsl(223, 80%, 59%);
+}
+button {
+    background-color: var(--blue);
+    color: white;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0px 3px 10px rgb(165, 165, 165);
+}
+button:active { background-color: rgba(79, 125, 243, .6); }
+
+/* HERO */
+.hero {
+    background-image: url(../images/illustration-dashboard.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 110%;
+    height: 50rem;
+    margin-top: 8rem;
+}
+
+/* FOOTER */
+.social-icons {
+    display: flex;
+    width: 19rem;
+    justify-content: space-between;
+}
+.social-icons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid var(--pale-blue);
+    border-radius: 50%;
+}
+svg{
+    width: 2.5rem;
+    fill: var(--blue);
+    transition: all .3s ease;
+}
+.face-icon:active, .twitter-icon:active, .insta-icon:active { background-color: var(--blue); }
+svg:active { fill: white; }
