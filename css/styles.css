@@ -95,22 +95,27 @@ button:active { background-color: rgba(79, 125, 243, .6); }
 
 /* FOOTER */
 footer { margin-bottom: 4rem; }
+.footer-p {
+    color: var(--gray);
+    font-size: 1.3rem;
+}
 .social-icons {
     display: flex;
-    width: 19rem;
+    width: 15rem;
     justify-content: space-between;
+    margin-bottom: 3rem;
 }
 .social-icons div {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border: 1px solid var(--pale-blue);
     border-radius: 50%;
 }
 svg{
-    width: 2.5rem;
+    width: 2rem;
     fill: var(--blue);
     transition: all .3s ease;
 }
